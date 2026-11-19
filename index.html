@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mashrou3i Publisher · مشروعي</title>
+<meta name="description" content="Mashrou3i Publisher: the internal tool that publishes Prof. Fellah Mohamed's own SVT lesson videos to the «مشروعي» YouTube channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><h1>مشروعي · Mashrou3i</h1><p>Natural &amp; Life Sciences (SVT) for Algerian secondary school · Prof. Fellah Mohamed</p></div></header>
+<nav><div class="wrap"><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div></nav>
+<main>
+<h2>What is Mashrou3i Publisher?</h2>
+<p><strong>Mashrou3i Publisher</strong> is a small internal tool used by one teacher, Prof. Fellah Mohamed (Makkawi Mohamed Secondary School, Algeria), to publish the lesson videos he produces himself to his own YouTube channel, <strong>«مشروعي · علوم الطبيعة والحياة»</strong>.</p>
+<div class="card">
+<h3>How it works</h3>
+<ol>
+<li>The teacher adds a finished lesson video (<code>video.mp4</code>) and its lesson card (title, level, unit, objectives) to his private lesson repository on GitHub.</li>
+<li>A GitHub Actions workflow builds the video's title, description, tags and playlist from that lesson card.</li>
+<li>The workflow uploads the video to the teacher's own YouTube channel using the YouTube Data API, sets its thumbnail and adds it to the matching playlist.</li>
+<li>The resulting YouTube video ID is saved back to the repository so the «مشروعي» classroom app can play the video through the standard YouTube embedded player.</li>
+</ol>
+</div>
+<h3>Who uses it</h3>
+<p>Only the channel owner. The tool has no public sign-up, no other users and does not access any other YouTube channel or any viewer data.</p>
+<h3>YouTube API Services</h3>
+<p>This tool uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See our <a href="privacy.html">Privacy Policy</a>, which links to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<section class="ar">
+<h2>ما هي أداة «ناشر مشروعي»؟</h2>
+<p>أداة داخلية يستعملها الأستاذ فلاح محمد وحده لنشر فيديوهات حصص علوم الطبيعة والحياة التي ينتجها بنفسه على قناته «مشروعي» في يوتيوب، انطلاقًا من مستودع الحصص على GitHub، ثم يشغّلها تطبيق «مشروعي» داخل القسم عبر مشغّل يوتيوب المدمج.</p>
+<p>لا تجمع الأداة بيانات أي مستخدم، ولا تصل إلى أي قناة أخرى.</p>
+</section>
+</main>
+<footer>© 2026 Prof. Fellah Mohamed · مشروعي</footer>
+</body>
+</html>

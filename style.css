@@ -1,0 +1,19 @@
+:root{--blue:#0057D9;--green:#10B981;--gold:#F4C542;--ink:#0F3D3B;--sky:#E8F6FF;--cream:#FFF8E7}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Cairo",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.75}
+header{background:var(--blue);color:#fff;padding:48px 24px 40px}
+header .wrap{max-width:860px;margin:0 auto}
+header h1{margin:0;font-size:44px;font-weight:900;letter-spacing:-.5px}
+header p{margin:6px 0 0;font-size:18px;opacity:.92}
+nav{background:var(--ink)}
+nav .wrap{max-width:860px;margin:0 auto;display:flex;gap:24px;padding:10px 24px}
+nav a{color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+nav a:hover{color:var(--gold)}
+main{max-width:860px;margin:0 auto;padding:32px 24px 64px}
+h2{font-size:24px;margin:40px 0 8px;color:var(--blue)}
+h3{font-size:18px;margin:24px 0 4px}
+section.ar{direction:rtl;text-align:right;border-top:3px solid var(--gold);margin-top:48px;padding-top:8px}
+.card{background:#fff;border-radius:14px;padding:20px 24px;margin:16px 0;border-inline-start:6px solid var(--green)}
+a{color:var(--blue)}
+code{background:var(--sky);padding:1px 6px;border-radius:6px}
+footer{text-align:center;font-size:14px;padding:24px;color:#4b6a68}

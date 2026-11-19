@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Mashrou3i Publisher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><h1>Privacy Policy</h1><p>Mashrou3i Publisher · Last updated: 19 November 2026</p></div></header>
+<nav><div class="wrap"><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div></nav>
+<main>
+<p>This policy explains what data <strong>Mashrou3i Publisher</strong> (“the tool”) accesses, how it is used, stored and deleted. The tool is operated by Prof. Fellah Mohamed for his own YouTube channel only.</p>
+
+<h2>1. Use of YouTube API Services</h2>
+<p>The tool uses <strong>YouTube API Services</strong> to upload videos and manage playlists and thumbnails on the operator's own channel. By using the tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> (<a href="http://www.google.com/policies/privacy">www.google.com/policies/privacy</a>).</p>
+
+<h2>2. Data the tool accesses</h2>
+<ul>
+<li><strong>OAuth credentials</strong> of the channel owner's Google account, granted through Google's consent screen with the scopes <code>youtube.upload</code> and <code>youtube</code>.</li>
+<li><strong>Video metadata the tool creates</strong>: the IDs of the videos and playlists it uploads or creates.</li>
+</ul>
+<p>The tool does <strong>not</strong> access, collect or store any data about viewers, subscribers, comments, analytics, or any other user or channel.</p>
+
+<h2>3. How data is used</h2>
+<p>The credentials are used only to upload the operator's own lesson videos, set their thumbnails and add them to his playlists. Video IDs are used only to let the «مشروعي» classroom app play these videos through the standard YouTube embedded player.</p>
+
+<h2>4. Storage and security</h2>
+<ul>
+<li>The OAuth refresh token is stored only as an encrypted <strong>GitHub Actions secret</strong> in the operator's repository. It is never written to files, logs or any third-party service.</li>
+<li>Video IDs are stored in a registry file (<code>youtube/videos.json</code>) in the operator's repository.</li>
+<li>No cookies, tracking or analytics are used by this website or the tool.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>The tool does not sell, share or transfer any data to third parties. Data is exchanged only with Google/YouTube through the YouTube API Services.</p>
+
+<h2>6. Revoking access and deleting data</h2>
+<ul>
+<li>Access can be revoked at any time from the Google security settings page: <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>.</li>
+<li>Deleting the GitHub secret <code>YT_REFRESH_TOKEN</code> removes the stored credential immediately.</li>
+<li>Upon revocation, or on request, any stored authorization data is deleted within 7 days, and API data is not kept for longer than 30 days unless it is refreshed.</li>
+</ul>
+
+<h2>7. Changes</h2>
+<p>Any change to this policy will be published on this page with a new “last updated” date.</p>
+
+<h2>8. Contact</h2>
+<p>Prof. Fellah Mohamed · Makkawi Mohamed Secondary School, Algeria<br>Contact: <a href="https://github.com/momob196">github.com/momob196</a></p>
+
+<section class="ar">
+<h2>سياسة الخصوصية (ملخص بالعربية)</h2>
+<p>تستعمل الأداة خدمات YouTube API لرفع فيديوهات الأستاذ فلاح محمد إلى قناته فقط. باستعمالها توافق على <a href="https://www.youtube.com/t/terms">شروط خدمة يوتيوب</a>، وتخضع البيانات لـ<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
+<p>لا تجمع الأداة أي بيانات عن المشاهدين أو المشتركين أو أي مستخدم آخر. يُحفظ مفتاح التفويض مشفّرًا في أسرار GitHub فقط، ويمكن إلغاء الإذن في أي وقت من <a href="https://security.google.com/settings/security/permissions">إعدادات أمان Google</a>.</p>
+</section>
+</main>
+<footer>© 2026 Prof. Fellah Mohamed · مشروعي</footer>
+</body>
+</html>
